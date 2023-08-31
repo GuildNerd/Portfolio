@@ -1,12 +1,15 @@
-import { useState } from 'react'
-import './App.css'
+import NavBar from "./components/navBar"
+import About from "./components/about"
 
 function App() {
   return (
     <div>
-      <p className='white'>
-        hello, World!
-      </p>
+      <header className="mb-2">
+        <NavBar></NavBar>
+      </header>
+      <main>
+        <About></About>
+      </main>
     </div>
   )
 }
