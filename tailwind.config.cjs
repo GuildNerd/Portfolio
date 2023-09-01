@@ -13,6 +13,7 @@ module.exports = {
         dark: {
           'green': '#004443',
           'lead': '#002e34',
+          'gray': '#182224'
         }
       },
       fontFamily: {

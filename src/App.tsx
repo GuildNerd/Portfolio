@@ -1,5 +1,6 @@
 import NavBar from "./components/navBar"
 import About from "./components/about"
+import Technologies from "./components/technologies"
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       </header>
       <main>
         <About></About>
+        <Technologies></Technologies>
       </main>
     </div>
   )
