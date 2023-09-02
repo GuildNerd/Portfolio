@@ -1,36 +1,43 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import FrontEnd from "./technologies/frontEnd";
 import BackEnd from "./technologies/backEnd";
 import Tools from "./technologies/tools";
 
 export default function Technologies() {
-    const [page, setPage] = useState('front');
+    const btnStyle = "py-2 px-4 rounded-md bg-green-mint"
+
+    const [tech, setTech] = useState('front-end');
+
+    const handleChangeTech = (event: React.MouseEvent<HTMLButtonElement>, techName: string) => {
+        event.preventDefault();
+
+        event.currentTarget.setAttribute('active', 'true');
+        setTech(techName);
+    }
 
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col mt-4">
             <div className="flex justify-center">
                 <h2 className="text-white text-xl font-bold">Tecnologias e Ferramentas</h2>
             </div>
-            <div className="mt-2 flex justify-evenly text-dark-lead">
-                <button className="py-2 px-4 rounded-md bg-green-neon">
+            <div className="mt-2 flex justify-evenly lg:justify-center lg:gap-4 text-dark-lead">
+                <button onClick={(event) => { handleChangeTech(event, 'front-end') }} className={`${btnStyle} ${tech == 'front-end' ? 'bg-green-neon' : ''}`}>
                     <h4>Front-end</h4>
                 </button>
-                <button className="py-2 px-4 rounded-md bg-green-mint">
+                <button onClick={(event) => { handleChangeTech(event, 'back-end') }} className={`${btnStyle} ${tech == 'back-end' ? 'bg-green-neon' : ''}`}>
                     <h4>Back-end</h4>
                 </button>
-                <button className="py-2 px-4 rounded-md bg-green-mint">
+                <button onClick={(event) => { handleChangeTech(event, 'tools') }} className={`${btnStyle} ${tech == 'tools' ? 'bg-green-neon' : ''}`}>
                     <h4>Ferramentas</h4>
                 </button>
             </div>
             <div>
                 {
-                    page == 'front' ?
-                        <FrontEnd />
+                    tech == 'front-end' ? <FrontEnd />
                     :
-                    page == 'back' ?
-                        <BackEnd />
+                    tech == 'back-end' ? <BackEnd />
                     :
-                        <Tools />
+                    <Tools />
                 }
             </div>
         </div>
