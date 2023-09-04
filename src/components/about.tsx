@@ -1,6 +1,6 @@
 export default function About() {
     return (
-        <div className="text-white flex flex-col items-center gap-2 mt-4">
+        <div className="text-white flex flex-col items-center gap-2 mt-4" id="about">
             <h1 className="text-2xl">Luiz Arthur Bitencourt</h1>
             <div className="flex flex-col gap-2">
                 <img src="\src\assets\my_photo.jpg" alt="Foto Luiz Bitencourt, tirada em frente ao Museu da Moda de Belo Horizonte" className="min-w-[8rem] w-32 rounded-full border-2 border-green-mint" />
@@ -16,7 +16,7 @@ export default function About() {
                     </a>
                 </div>
             </div>
-            <div className="flex flex-col items-center gap-2 p-4">
+            <div className="flex flex-col items-center gap-2 p-4 mt-4 bg-slate-700">
                 <h2 className="text-xl font-bold">Sobre mim</h2>
                 <p className="text-justify lg:px-8">
                     Desenvolvedor full-stack, designer de UI/UX e graduando de Sistemas de Informação na PUC Minas, atualmente cursando o 8º (último) período. Sou apaixonado por tecnologia e me encontrei no desenvolvimento de software, onde busco sempre aplicar tanto o que aprendi em sala de aula quanto o

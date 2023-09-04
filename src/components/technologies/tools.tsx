@@ -7,7 +7,7 @@ export default function Tools() {
             <Technology link="https://git-scm.com/" altImgLink="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" techName="Git"/>
             <Technology link="https://www.github.com" imgLink="github" techName="GitHub"/>
             <Technology link="https://www.mysql.com/" imgLink="mysql" techName="MySQL"/>
-            <Technology link="https://www.microsoft.com/en-us/sql-server" altImgLink="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" techName="SQlServer"/>
+            <Technology link="https://www.microsoft.com/en-us/sql-server" altImgLink="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" techName="SQLServer"/>
         </div>
     )
 }

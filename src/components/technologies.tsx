@@ -16,11 +16,11 @@ export default function Technologies() {
     }
 
     return (
-        <div className="flex flex-col mt-4">
+        <div className="flex flex-col my-4" id="technologies">
             <div className="flex justify-center">
                 <h2 className="text-white text-xl font-bold">Tecnologias e Ferramentas</h2>
             </div>
-            <div className="mt-2 flex justify-evenly lg:justify-center lg:gap-4 text-dark-lead">
+            <div className="mt-2 flex justify-evenly md:justify-center md:gap-4 text-dark-lead">
                 <button onClick={(event) => { handleChangeTech(event, 'front-end') }} className={`${btnStyle} ${tech == 'front-end' ? 'bg-green-neon' : ''}`}>
                     <h4>Front-end</h4>
                 </button>
