@@ -5,7 +5,7 @@ import Projects from "./components/projects"
 
 function App() {
   return (
-    <div id="home">
+    <div id="home" className="mb-8">
       <header className="mb-2">
         <NavBar></NavBar>
       </header>
