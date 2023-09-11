@@ -9,7 +9,7 @@ function App() {
       <header className="mb-2">
         <NavBar></NavBar>
       </header>
-      <main>
+      <main className="flex flex-col gap-12">
         <About></About>
         <Technologies></Technologies>
         <Projects></Projects>
