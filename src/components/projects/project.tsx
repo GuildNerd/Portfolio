@@ -20,7 +20,7 @@ export default function Project({ projectName, projectLink, imgSrc, imgAlt, desc
             <div style={style.description} className="flex flex-col gap-2">
                 <h4 className="text-xl font-bold">{projectName}</h4>
                 <p>{description}</p>
-                <a href={projectLink} target="_blank">
+                <a href={projectLink} target="_blank" className="w-max">
                     <button className="flex gap-1 items-center p-2 rounded-md bg-green-mint hover:bg-green-neon text-black transition-colors">
                         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" alt="Ícone Github" className="!w-4 h-4" />
                         Abrir no Github

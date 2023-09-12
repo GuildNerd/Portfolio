@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import FrontEnd from "./technologies/frontEnd";
-import BackEnd from "./technologies/backEnd";
-import Tools from "./technologies/tools";
+import FrontEnd from "./frontEnd";
+import BackEnd from "./backEnd";
+import Tools from "./tools";
 
 export default function Technologies() {
     const btnStyle = "py-2 px-4 rounded-md bg-green-mint"
@@ -22,13 +22,13 @@ export default function Technologies() {
             </div>
             <div className="mt-2 flex justify-evenly md:justify-center md:gap-4 text-dark-lead">
                 <button onClick={(event) => { handleChangeTech(event, 'front-end') }} className={`${btnStyle} ${tech == 'front-end' ? 'bg-green-neon' : ''}`}>
-                    <h4>Front-end</h4>
+                    <h3>Front-end</h3>
                 </button>
                 <button onClick={(event) => { handleChangeTech(event, 'back-end') }} className={`${btnStyle} ${tech == 'back-end' ? 'bg-green-neon' : ''}`}>
-                    <h4>Back-end</h4>
+                    <h3>Back-end</h3>
                 </button>
                 <button onClick={(event) => { handleChangeTech(event, 'tools') }} className={`${btnStyle} ${tech == 'tools' ? 'bg-green-neon' : ''}`}>
-                    <h4>Ferramentas</h4>
+                    <h3>Ferramentas</h3>
                 </button>
             </div>
             <div>

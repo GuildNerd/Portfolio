@@ -25,6 +25,13 @@ export default function Projects() {
             imgSrc: "https://placehold.co/600x600",
             imgAlt: "Ícone do AceUni, consiste no símbolo de PCD's com um prédio ao fundo",
             description: "Aplicação web com tema \"Acessibilidade nas instituições de ensino\", o intuito era criar uma ponte entre as pessoas com deficiência e as universidades, para que essas pessoas pudessem fornecer sugestões e críticas de melhorias para acessibilidade nos campi. Foi um trabalho em grupo desenvolvido no 2º período do curso de Sistemas de Informação, no qual fui responsável pelo desenvolvimento das interfaces. Página criada com HTML, CSS e JavaScript puro"
+        },
+        {
+            projectName: "Top Selected News",
+            projectLink: "https://github.com/GuildNerd/top_selected_news",
+            imgSrc: "https://placehold.co/600x600",
+            imgAlt: "Ícone do Top Selected News",
+            description: "Primeiro site feito por mim. Foi um trabalho de faculdade da matéria \"Desenvolvimento de Interfaces Web\", a tarefa era criar um site de notícias que consumisse uma API de notícias fornecida pelo professor. Dentro do site é possível buscar notícias por palavras-chave e salvar essas palavras-chave para pesquisar novamente, caso o usuário deseje. A página foi criada com HTML, CSS e JavaScript puro"
         }
     ];
 
@@ -40,6 +47,9 @@ export default function Projects() {
                 </div>
                 <div>
                     <Project projectLink={projectList[2].projectLink} projectName={projectList[2].projectName} imgSrc={projectList[2].imgSrc} imgAlt={projectList[2].imgAlt} description={projectList[2].description} />
+                </div>
+                <div>
+                    <Project projectLink={projectList[3].projectLink} projectName={projectList[3].projectName} imgSrc={projectList[3].imgSrc} imgAlt={projectList[3].imgAlt} description={projectList[3].description} />
                 </div>
             </Carousel>
         </div>
