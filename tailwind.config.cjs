@@ -19,10 +19,19 @@ module.exports = {
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'],
       },
+      animation: {
+        fadeIn: 'fadeIn 2s',
+      },
+      keyframes: theme => ({
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
+      }),
     }
   },
-  variants: {
-    backgroundColor: ['responsive', 'focus', 'hover', 'active']
-  },
-  plugins: [],
+variants: {
+  backgroundColor: ['responsive', 'focus', 'hover', 'active']
+},
+plugins: [],
 }
